@@ -50,7 +50,7 @@
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Dahmen Maram</h1>
-        <p class="section__text__p2">Second-year software engineering student</p>
+        <p class="section__text__p2">Final-year software engineering student</p>
         
         <div class="btn-container">
           <button
@@ -68,7 +68,7 @@
             src="./assets/linkedin.png"
             alt="My LinkedIn profile"
             class="icon"
-            onclick="location.href='https://www.linkedin.com/feed/'"
+            onclick="location.href='https://www.linkedin.com/in/maram-dahmen-47a78b297/'"
           />
           <img
             src="./assets/github.png"
@@ -94,8 +94,8 @@
                 class="icon"
               />
               <h3>Associations</h3>
-              <p>Senior member at <br />Enit junior entreprises</p>
-              <p>Active member at <br />G2foss</p>
+              <p>Honor member at <br />Enit junior entreprises</p>
+              <p>Senior member at <br />G2foss</p>
             </div>
             <div class="details-container">
               <img
@@ -104,12 +104,12 @@
                 class="icon"
               />
               <h3>Education</h3>
-              <p>Second year of software engineering<br />Enit</p>
+              <p>Final-year of software engineering<br />Enit</p>
             </div>
           </div>
           <div class="text-container">
             <p>
-              My name is Maram Dahmen,22 years old ,and I am currently a second-year Computer Engineering student at the National Engineering School of Tunis (ENIT). In addition to my academic studies, I am a senior member of the ENIT Junior Enterprise Association, where I have had the opportunity to work on various projects outside the university curriculum. These experiences have allowed me to develop practical skills in software development, teamwork, and project management, while applying the theoretical knowledge gained in class to real-world challenges. I am passionate about continuously learning and expanding my skill set, and I am excited to contribute to innovative projects in the field of computer engineering. 
+              My name is Maram Dahmen,22 years old ,and I am currently a final-year Computer Engineering student at the National Engineering School of Tunis (ENIT). In addition to my academic studies, I am an honor member of the ENIT Junior Enterprise Association, where I have had the opportunity to work on various projects outside the university curriculum. These experiences have allowed me to develop practical skills in software development, teamwork, and project management, while applying the theoretical knowledge gained in class to real-world challenges. I am passionate about continuously learning and expanding my skill set, and I am excited to contribute to innovative projects in the field of computer engineering. 
             </p>
           </div>
         </div>
@@ -363,6 +363,50 @@
                   <p>Intermediate</p>
                 </div>
               </article>
+              <article>
+                <img
+                  src="./assets/next.jpg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>NextJS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/nest.jpg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>NestJS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/jwt.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JWT</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/llm.jpg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>LLMs</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
             </div>
           </div>
           
@@ -456,7 +500,6 @@
     </section>
     
     <section id="projects">
-      
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
       <div class="experience-details-container">
@@ -560,6 +603,25 @@
               
             </div>
           </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/teamwill.png"
+                alt="Project 4"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Application intelligente Teamwill events </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Dahmen-Maram/Teamwill_event-Backend-final.git'"
+              >
+                Github
+              </button>
+              
+            </div>
+          </div>
         </div>
       </div>
       <img
@@ -646,23 +708,47 @@
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
       
-    
       <!-- Formulaire de contact -->
-      <form id="contact-form" class="contact-form" onsubmit="sendEmail(event)">
-        <div class="form-group">
+      <form id="contact-form" class="contact-form" onsubmit="sendEmail(event)" aria-label="Contact form">
+        <div class="form-group" data-aos="fade-up">
           <label for="user_name">Your Name</label>
-          <input type="text" id="user_name" name="user_name" required />
+          <input 
+            type="text" 
+            id="user_name" 
+            name="user_name" 
+            required 
+            placeholder="Enter your name"
+            autocomplete="name"
+            aria-required="true"
+          />
         </div>
-        <div class="form-group">
+        <div class="form-group" data-aos="fade-up">
           <label for="user_email">Your Email</label>
-          <input type="email" id="user_email" name="user_email" required />
+          <input 
+            type="email" 
+            id="user_email" 
+            name="user_email" 
+            required 
+            placeholder="Enter your email"
+            autocomplete="email"
+            aria-required="true"
+          />
         </div>
-        <div class="form-group">
+        <div class="form-group" data-aos="fade-up">
           <label for="user_message">Your Message</label>
-          <textarea id="user_message" name="user_message" rows="5" required></textarea>
+          <textarea 
+            id="user_message" 
+            name="user_message" 
+            rows="5" 
+            required 
+            placeholder="What would you like to say?"
+            aria-required="true"
+          ></textarea>
         </div>
-        <button type="submit" class="btn btn-color-1">Send Message</button>
-        <div id="form-status" class="form-status"></div>
+        <button type="submit" class="btn btn-color-1" data-aos="fade-up">
+          <span>Send Message</span>
+        </button>
+        <div id="form-status" class="form-status" role="alert" aria-live="polite"></div>
       </form>
     </section>
     

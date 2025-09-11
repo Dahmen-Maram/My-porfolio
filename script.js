@@ -3,8 +3,17 @@ function toggleMenu() {
     const icon = document.querySelector(".hamburger-icon");
     menu.classList.toggle("open");
     icon.classList.toggle("open");
-  }
-  // Fonction d'envoi d'email avec EmailJS
+}
+
+// Project scroll functionality
+function toggleMenu() {
+    const menu = document.querySelector(".menu-links");
+    const icon = document.querySelector(".hamburger-icon");
+    menu.classList.toggle("open");
+    icon.classList.toggle("open");
+}
+
+// Fonction d'envoi d'email avec EmailJS
   function sendEmail(event) {
     event.preventDefault();
   
