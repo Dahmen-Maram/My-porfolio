@@ -199,6 +199,18 @@ section {
 .icon {
   cursor: pointer;
   height: 2rem;
+  width: 2rem;
+  object-fit: contain;
+  background: transparent;
+}
+
+/* Style spécifique pour les icônes de compétences */
+.article-container .icon {
+  width: 2rem;
+  height: 2rem;
+  object-fit: contain;
+  background: transparent;
+  padding: 0.2rem;
 }
 
 /* BUTTONS */
