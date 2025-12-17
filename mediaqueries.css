@@ -100,5 +100,10 @@
     .text-container {
       text-align: justify;
     }
+    /* Make project images scale on small screens */
+    .project-img {
+      height: 40vw;
+      object-fit: cover;
+    }
   }
   
