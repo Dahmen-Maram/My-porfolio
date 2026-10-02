@@ -4,834 +4,366 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Maram Dahmen | Software Engineer</title>
+    <meta name="description" content="Maram Dahmen — Software Engineer specialised in AI & Data Science, ENIT graduate with highest honors." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-<script>
-  emailjs.init("NAfFHpgFgSij1722S"); // Remplace avec ton User ID EmailJS
-</script>
-
+    <script>
+      emailjs.init("NAfFHpgFgSij1722S");
+    </script>
   </head>
   <body>
-    <nav id="desktop-nav">
-      <div class="logo">My portfolio</div>
-      <div>
+    <div class="bg-decor" aria-hidden="true">
+      <span class="blob blob-1"></span>
+      <span class="blob blob-2"></span>
+      <span class="blob blob-3"></span>
+    </div>
+
+    <!-- NAVIGATION -->
+    <header class="site-header" id="site-header">
+      <nav class="nav container">
+        <a href="#profile" class="logo">Maram<span>.</span></a>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#Skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#Certif">Certifications</a></li>
-          <li><a href="#contact">Contact</a></li>
-          
+          <li><a href="#contact" class="nav-cta">Contact</a></li>
         </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">My portfolio</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="https://i.ibb.co/MDvZNLfh/maram1.png" alt="profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Dahmen Maram</h1>
-        <p class="section__text__p2">Final-year software engineering student</p>
-        
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/Cv  MaramDAHMEN.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="https://i.ibb.co/rKPPK1Py/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/maram-dahmen-47a78b297/'"
-          />
-          <img
-            src="https://i.ibb.co/PZbF5Mx9/Github.jpg"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/Dahmen-Maram'"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1"> To Know More</p>
-      <h1 class="title">About Me</h1>
-      
-        
-         
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="https://i.ibb.co/k6sM5w14/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Associations</h3>
-              <p>Honor member at <br />Enit junior entreprises</p>
-              <p>Senior member at <br />G2foss</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="https://i.ibb.co/1fwyW2pk/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>Final-year of software engineering<br />Enit</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              My name is Maram Dahmen,23 years old ,and I am currently a final-year Computer Engineering student at the National Engineering School of Tunis (ENIT) with an AI option. In addition to my academic studies, I am an honor member of the ENIT Junior Enterprise Association, where I have had the opportunity to work on various projects outside the university curriculum. These experiences have allowed me to develop practical skills in software development, teamwork, and project management, while applying the theoretical knowledge gained in class to real-world challenges. I am passionate about continuously learning and expanding my skill set, and I am excited to contribute to innovative projects in the field of computer engineering. 
-            </p>
-          </div>
-        </div>
-      </div>
-      
-    </section>
-    
-    <section id="Skills">
-      
-      
-      <p class="section__text__p1">Explore My</p>
-      
-      <h1 class="title">Hard Skills</h1>
-      
-      <div class="experience-details-container">
-        
-        <div class="about-containers">
-          <div class="details-container">
-            
-            <h2 class="experience-sub-title">Skills & Technologies</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/Html.jpeg"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/Css.jpeg"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/Angular.jpeg"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Angular</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/Javascript.jpeg"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/Figma.jpeg"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Figma(UI/UX Design)</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/Postgresql.jpeg"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>PostgreSQL</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/Spring.jpeg"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Spring boot</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/MongoDb.jpeg"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>MongoDB</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/Git.jpeg"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/J2ee.jpeg"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>J2EE</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/C.jpeg"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>C</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/C Sharp Sticker.jpeg"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>C#</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/Python.jpeg"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Python</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/Java.jpeg"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Java</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="https://images.icon-icons.com/2699/PNG/512/dotnet_logo_icon_170223.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>.Net</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/MySQL.jpeg"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>MySQL</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/Github.jpeg"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Github</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/Git.jpeg"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="https://www.computernetworkingnotes.com/wp-content/uploads/ccna-study-guide/images/csg132-01-cisco-packet-tracer.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Cisco packet tracer</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/Huawei.jpeg"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Huawei Ensp</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-
-              <article>
-                <img
-                  src="./assets/Flutter.jpeg"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Flutter</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="https://i.ibb.co/SDDjdy7J/next.jpg"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>NextJS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="https://i.ibb.co/Fkm3cRg2/nest.jpg"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>NestJS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="https://i.ibb.co/ksbsB1hg/jwt.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JWT</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="https://i.ibb.co/6RpxTQqc/llm.jpg"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>LLMs</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          
-          </div>
-        </div>
-      </div>
-      <img
-        src="https://i.ibb.co/8gdknfyW/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-      <h1 class="title">Soft Skills</h1>
-      
-      <div class="experience-details-container">
-        
-        <div class="about-containers">
-          <div class="details-container">
-            
-            
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/Communication.jpeg"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Communication</h3>
-                  
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/Teamwork & Collaboration.jpeg"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Teamwork & Collaboration</h3>
-                  
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/Problem-Solving.jpeg"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Problem-Solving</h3>
-                  
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/Adaptability & Learning.jpeg"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Adaptability & Learning</h3>
-                  
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/Time Management.jpeg"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Time Management</h3>
-                  
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/Initiative & Responsibility.jpeg"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Initiative & Responsibility
-                  </h3>
-                 
-                </div>
-              </article>
-            </div>
-          </div>
-    </section>
-    
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="https://i.ibb.co/R49cjYXR/projet1.jpg"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Entreprise Content Management ECM</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Dahmen-Maram/Enterprise-Content-Management-System-ECM-.git'"
-              >
-                Github
-              </button>
-              
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/projet2.jpeg"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Recherche de fichiers par mot clé avec analyseurs en java </h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Dahmen-Maram/Recherche-de-Fichiers-par-Mot-Cl-avec-Analyseurs-en-Java.git'"
-              >
-                Github
-              </button>
-              
-            </div>
-          </div>
-          
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="https://i.ibb.co/WWk83MVq/projet3.jpg"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Cinema Booking J2EE</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Dahmen-Maram/Cinema-Booking-JEE.git'"
-              >
-                Github
-              </button>
-              
-            </div>
-            
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="https://i.ibb.co/mCbMvgk3/projet4.png"
-                alt="Project 4"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Partie de frontend d'une application mobile Arena Padel </h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/waelABDALLAH1/Arena-Padel-App.git'"
-              >
-                Github
-              </button>
-              
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-  src="https://i.ibb.co/cKw0ySgs/Projet5.png"
-  alt="Project 4"
-  class="project-img"
-  id="large-project-img"
-/>
-
-            </div>
-            <h2 class="experience-sub-title project-title">lf-codegen avec streamlit</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Dahmen-Maram/lf-codegen-streamlit'"
-              >
-                Github
-              </button>
-              
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="https://i.ibb.co/mr496Zjf/teamwill.png"
-                alt="Project 4"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Application intelligente Teamwill events </h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Dahmen-Maram/Teamwill_event-Backend-final.git'"
-              >
-                Github
-              </button>
-              
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="https://i.ibb.co/8gdknfyW/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-    <section id="Certif">
-    <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Certifications</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          
-      <div class="details-container color-container">
-        <div class="article-container">
-          <img
-            src="https://i.ibb.co/gx3JWk7/Certif-web.jpg"
-            alt="Project 4"
-            class="project-img"
-          />
-        </div>
-        <h2 class="experience-sub-title project-title">Certificat Dev Web niv1 Opus Lab </h2>
-        
-      </div>
-      <div class="details-container color-container">
-        <div class="article-container">
-          <img
-            src="https://i.ibb.co/0yw48gTc/Certif-Docker.jpg"
-            alt="Project 4"
-            class="project-img"
-          />
-        </div>
-        <h2 class="experience-sub-title project-title">Certificat Docker Training Course for the absolute beginner </h2>
-        
-        <div class="btn-container">
-          <a
-            class="btn btn-color-2"
-            href="assets/Certif Docker.pdf"
-            download
-          >
-            Download
-          </a>
-        </div>
-        
-        
-      </div>
-      <div class="details-container color-container">
-        <div class="article-container">
-          <img
-            src="https://i.ibb.co/hxW7N17L/4.png"
-            alt="Project 4"
-            class="project-img"
-          />
-        </div>
-        <h2 class="experience-sub-title project-title">Introduction to Transformer-Based Natural Language Processing </h2>
-        
-        <div class="btn-container">
-          <a
-            class="btn btn-color-2"
-            href="assets/certif Nvidia.pdf"
-            download
-          >
-            Download
-          </a>
-        </div>
-        
-        
-      </div>
-      <div class="details-container color-container">
-        <div class="article-container">
-          <img
-            src="https://i.ibb.co/LD2cnS8G/1.png"
-            alt="Project 4"
-            class="project-img"
-          />
-        </div>
-        <h2 class="experience-sub-title project-title">Rapid Application Development with Large Language Models(LLMs) </h2>
-        
-        <div class="btn-container">
-          <a
-            class="btn btn-color-2"
-            href="assets/Certif 3-1.pdf"
-            download
-          >
-            Download
-          </a>
-        </div>
-        
-        
-      </div>
-      <div class="details-container color-container">
-        <div class="article-container">
-          <img
-            src="https://i.ibb.co/gLFPwXvR/2.png"
-            alt="Project 4"
-            class="project-img"
-          />
-        </div>
-        <h2 class="experience-sub-title project-title">Building Transformer-Based Natural Language Processing Applications </h2>
-        
-        <div class="btn-container">
-          <a
-            class="btn btn-color-2"
-            href="assets/Building Transformer-Based Natural Language Processing Applications-1.pdf"
-            download
-          >
-            Download
-          </a>
-        </div>
-        
-        
-      </div>
-      <div class="details-container color-container">
-        <div class="article-container">
-          <img
-            src="https://i.ibb.co/zVtsY7MG/Certif-CCNA.png"
-            alt="Project 4"
-            class="project-img"
-          />
-        </div>
-        <h2 class="experience-sub-title project-title">Cisco CCNA: Introduction to Networks</h2>
-        <div class="btn-container">
-          <a
-  class="btn btn-color-2"
-  href="assets/_certificate_maram-dahmen-etudiant-enit-utm-tn_64be8089-9e4f-4c27-8843-776887def01a.pdf"
-  download
->
-  Download
-</a>
-
-          
-        </div>
-      </div>
-      <div class="details-container color-container">
-        <div class="article-container">
-          <img
-            src="https://i.ibb.co/4ZXmSRZY/Certif-Enit.jpg"
-            alt="Project 4"
-            class="project-img"
-          />
-        </div>
-        <h2 class="experience-sub-title project-title">Certificat de reconnaisance Enit junior entreprise </h2>
-        
-        </div>
-      </div>
-      </div>
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      
-      <!-- Formulaire de contact -->
-      <form id="contact-form" class="contact-form" onsubmit="sendEmail(event)" aria-label="Contact form">
-        <div class="form-group" data-aos="fade-up">
-          <label for="user_name">Your Name</label>
-          <input 
-            type="text" 
-            id="user_name" 
-            name="user_name" 
-            required 
-            placeholder="Enter your name"
-            autocomplete="name"
-            aria-required="true"
-          />
-        </div>
-        <div class="form-group" data-aos="fade-up">
-          <label for="user_email">Your Email</label>
-          <input 
-            type="email" 
-            id="user_email" 
-            name="user_email" 
-            required 
-            placeholder="Enter your email"
-            autocomplete="email"
-            aria-required="true"
-          />
-        </div>
-        <div class="form-group" data-aos="fade-up">
-          <label for="user_message">Your Message</label>
-          <textarea 
-            id="user_message" 
-            name="user_message" 
-            rows="5" 
-            required 
-            placeholder="What would you like to say?"
-            aria-required="true"
-          ></textarea>
-        </div>
-        <button type="submit" class="btn btn-color-1" data-aos="fade-up">
-          <span>Send Message</span>
+        <button class="hamburger-icon" aria-label="Open menu" onclick="toggleMenu()">
+          <span></span><span></span><span></span>
         </button>
-        <div id="form-status" class="form-status" role="alert" aria-live="polite"></div>
-      </form>
-    </section>
-    
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
       </nav>
-      <p>2025/2026</p>
+      <ul class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#Skills" onclick="toggleMenu()">Skills</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#Certif" onclick="toggleMenu()">Certifications</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </ul>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section id="profile" class="container">
+        <div class="hero-text reveal">
+          <span class="eyebrow"><span class="dot"></span>Open to new opportunities</span>
+          <p class="hero-hello">Hello, I'm</p>
+          <h1 class="hero-name">Maram <span class="gradient-text">Dahmen</span></h1>
+          <p class="hero-role">Software Engineer &middot; AI &amp; Data Science</p>
+          <p class="hero-tagline">
+            I build intelligent, reliable applications, from full-stack web platforms to
+            LLM-powered tools.
+          </p>
+          <div class="btn-container">
+            <a class="btn btn-primary" href="./assets/Cv  MaramDAHMEN.pdf" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-4.5-4.5M12 15l4.5-4.5M4 19h16" /></svg>
+              Download CV
+            </a>
+            <a class="btn btn-ghost" href="#contact">Let's talk</a>
+          </div>
+          <div class="socials">
+            <a href="https://www.linkedin.com/in/maram-dahmen-47a78b297/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path class="fill" d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.8 0 0 .77 0 1.73v20.54C0 23.23.8 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>
+            </a>
+            <a href="https://github.com/Dahmen-Maram" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path class="fill" d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.82-.26.82-.57v-2.04c-3.34.73-4.04-1.6-4.04-1.6-.55-1.4-1.34-1.77-1.34-1.77-1.08-.74.09-.73.09-.73 1.2.09 1.83 1.24 1.83 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.17 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.66 1.65.25 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.62-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .3Z"/></svg>
+            </a>
+            <a href="#contact" aria-label="Email me">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6.5h18v11H3z"/><path d="m3.5 7 8.5 6.5L20.5 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="photo-ring">
+            <img src="https://i.ibb.co/MDvZNLfh/maram1.png" alt="Portrait of Maram Dahmen" />
+          </div>
+        </div>
+
+        <a href="#about" class="scroll-hint" aria-label="Scroll to About">
+          <span></span>
+        </a>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="container">
+        <div class="section-head reveal">
+          <p class="section-kicker">To know more</p>
+          <h2 class="section-title">About Me</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-cards">
+            <article class="info-card reveal">
+              <div class="info-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/></svg>
+              </div>
+              <h3>Education</h3>
+              <p><strong>Engineering degree, Computer Engineering</strong></p>
+              <p>ENIT, AI option</p>
+              <span class="pill pill-accent">Highest Honors</span>
+            </article>
+            <article class="info-card reveal">
+              <div class="info-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6"/><path d="M16 4.5a3.5 3.5 0 0 1 0 7M18 14.3c2.1.7 3.5 2.8 3.5 5.7"/></svg>
+              </div>
+              <h3>Associations</h3>
+              <p><strong>Honor member</strong>, ENIT Junior Entreprise</p>
+              <p><strong>Senior member</strong>, G2FOSS</p>
+            </article>
+          </div>
+
+          <div class="about-text reveal">
+            <p>
+              My name is <strong>Maram Dahmen</strong>, I am 23 years old, and I am a Computer Engineering
+              graduate of the National Engineering School of Tunis (ENIT), AI option, where I graduated
+              with <strong>highest honors</strong>.
+            </p>
+            <p>
+              Alongside my academic studies, I was an honor member of the ENIT Junior Enterprise
+              Association, where I had the opportunity to work on various projects outside the
+              university curriculum. These experiences have allowed me to develop practical skills in
+              software development, teamwork, and project management, while applying the theoretical
+              knowledge gained in class to real-world challenges.
+            </p>
+            <p>
+              I am passionate about continuously learning and expanding my skill set, and I am excited
+              to contribute to innovative projects in the field of computer engineering.
+            </p>
+            <div class="stats">
+              <div><strong>6+</strong><span>Projects</span></div>
+              <div><strong>7</strong><span>Certifications</span></div>
+              <div><strong>20+</strong><span>Technologies</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="Skills" class="container">
+        <div class="section-head reveal">
+          <p class="section-kicker">Explore my</p>
+          <h2 class="section-title">Skills</h2>
+        </div>
+
+        <h3 class="sub-title reveal">Hard Skills &amp; Technologies</h3>
+        <div class="skills-grid">
+          <article class="skill reveal"><img src="./assets/Html.jpeg" alt="" /><div><h4>HTML</h4><span class="level lvl-3">Experienced</span></div></article>
+          <article class="skill reveal"><img src="./assets/Css.jpeg" alt="" /><div><h4>CSS</h4><span class="level lvl-2">Intermediate</span></div></article>
+          <article class="skill reveal"><img src="./assets/Angular.jpeg" alt="" /><div><h4>Angular</h4><span class="level lvl-2">Intermediate</span></div></article>
+          <article class="skill reveal"><img src="./assets/Javascript.jpeg" alt="" /><div><h4>JavaScript</h4><span class="level lvl-1">Basic</span></div></article>
+          <article class="skill reveal"><img src="./assets/Figma.jpeg" alt="" /><div><h4>Figma (UI/UX)</h4><span class="level lvl-1">Basic</span></div></article>
+          <article class="skill reveal"><img src="./assets/Postgresql.jpeg" alt="" /><div><h4>PostgreSQL</h4><span class="level lvl-2">Intermediate</span></div></article>
+          <article class="skill reveal"><img src="./assets/Spring.jpeg" alt="" /><div><h4>Spring Boot</h4><span class="level lvl-3">Experienced</span></div></article>
+          <article class="skill reveal"><img src="./assets/MongoDb.jpeg" alt="" /><div><h4>MongoDB</h4><span class="level lvl-1">Basic</span></div></article>
+          <article class="skill reveal"><img src="./assets/Git.jpeg" alt="" /><div><h4>Git</h4><span class="level lvl-2">Intermediate</span></div></article>
+          <article class="skill reveal"><img src="./assets/J2ee.jpeg" alt="" /><div><h4>J2EE</h4><span class="level lvl-2">Intermediate</span></div></article>
+          <article class="skill reveal"><img src="./assets/C.jpeg" alt="" /><div><h4>C</h4><span class="level lvl-2">Intermediate</span></div></article>
+          <article class="skill reveal"><img src="./assets/C Sharp Sticker.jpeg" alt="" /><div><h4>C#</h4><span class="level lvl-2">Intermediate</span></div></article>
+          <article class="skill reveal"><img src="./assets/Python.jpeg" alt="" /><div><h4>Python</h4><span class="level lvl-2">Intermediate</span></div></article>
+          <article class="skill reveal"><img src="./assets/Java.jpeg" alt="" /><div><h4>Java</h4><span class="level lvl-2">Intermediate</span></div></article>
+          <article class="skill reveal"><img src="https://images.icon-icons.com/2699/PNG/512/dotnet_logo_icon_170223.png" alt="" /><div><h4>.NET</h4><span class="level lvl-2">Intermediate</span></div></article>
+          <article class="skill reveal"><img src="./assets/MySQL.jpeg" alt="" /><div><h4>MySQL</h4><span class="level lvl-2">Intermediate</span></div></article>
+          <article class="skill reveal"><img src="./assets/Github.jpeg" alt="" /><div><h4>GitHub</h4><span class="level lvl-2">Intermediate</span></div></article>
+          <article class="skill reveal"><img src="https://www.computernetworkingnotes.com/wp-content/uploads/ccna-study-guide/images/csg132-01-cisco-packet-tracer.png" alt="" /><div><h4>Cisco Packet Tracer</h4><span class="level lvl-2">Intermediate</span></div></article>
+          <article class="skill reveal"><img src="./assets/Huawei.jpeg" alt="" /><div><h4>Huawei eNSP</h4><span class="level lvl-2">Intermediate</span></div></article>
+          <article class="skill reveal"><img src="./assets/Flutter.jpeg" alt="" /><div><h4>Flutter</h4><span class="level lvl-2">Intermediate</span></div></article>
+          <article class="skill reveal"><img src="https://i.ibb.co/SDDjdy7J/next.jpg" alt="" /><div><h4>Next.js</h4><span class="level lvl-2">Intermediate</span></div></article>
+          <article class="skill reveal"><img src="https://i.ibb.co/Fkm3cRg2/nest.jpg" alt="" /><div><h4>NestJS</h4><span class="level lvl-2">Intermediate</span></div></article>
+          <article class="skill reveal"><img src="https://i.ibb.co/ksbsB1hg/jwt.png" alt="" /><div><h4>JWT</h4><span class="level lvl-2">Intermediate</span></div></article>
+          <article class="skill reveal"><img src="https://i.ibb.co/6RpxTQqc/llm.jpg" alt="" /><div><h4>LLMs</h4><span class="level lvl-2">Intermediate</span></div></article>
+        </div>
+
+        <h3 class="sub-title reveal">Soft Skills</h3>
+        <div class="soft-grid reveal">
+          <span class="soft"><img src="./assets/Communication.jpeg" alt="" />Communication</span>
+          <span class="soft"><img src="./assets/Teamwork & Collaboration.jpeg" alt="" />Teamwork &amp; Collaboration</span>
+          <span class="soft"><img src="./assets/Problem-Solving.jpeg" alt="" />Problem-Solving</span>
+          <span class="soft"><img src="./assets/Adaptability & Learning.jpeg" alt="" />Adaptability &amp; Learning</span>
+          <span class="soft"><img src="./assets/Time Management.jpeg" alt="" />Time Management</span>
+          <span class="soft"><img src="./assets/Initiative & Responsibility.jpeg" alt="" />Initiative &amp; Responsibility</span>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="container">
+        <div class="section-head reveal">
+          <p class="section-kicker">Browse my recent</p>
+          <h2 class="section-title">Projects</h2>
+        </div>
+
+        <div class="cards-grid">
+          <article class="card reveal">
+            <div class="card-media"><img src="https://i.ibb.co/mr496Zjf/teamwill.png" alt="Teamwill events application" loading="lazy" /></div>
+            <div class="card-body">
+              <h3>Application intelligente Teamwill events</h3>
+              <a class="card-link" href="https://github.com/Dahmen-Maram/Teamwill_event-Backend-final.git" target="_blank" rel="noopener">View on GitHub <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="card-media"><img src="https://i.ibb.co/cKw0ySgs/Projet5.png" alt="lf-codegen Streamlit app" loading="lazy" /></div>
+            <div class="card-body">
+              <h3>lf-codegen avec Streamlit</h3>
+              <a class="card-link" href="https://github.com/Dahmen-Maram/lf-codegen-streamlit" target="_blank" rel="noopener">View on GitHub <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="card-media"><img src="https://i.ibb.co/R49cjYXR/projet1.jpg" alt="Enterprise Content Management" loading="lazy" /></div>
+            <div class="card-body">
+              <h3>Entreprise Content Management ECM</h3>
+              <a class="card-link" href="https://github.com/Dahmen-Maram/Enterprise-Content-Management-System-ECM-.git" target="_blank" rel="noopener">View on GitHub <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="card-media"><img src="./assets/projet2.jpeg" alt="Keyword file search in Java" loading="lazy" /></div>
+            <div class="card-body">
+              <h3>Recherche de fichiers par mot clé avec analyseurs en Java</h3>
+              <a class="card-link" href="https://github.com/Dahmen-Maram/Recherche-de-Fichiers-par-Mot-Cl-avec-Analyseurs-en-Java.git" target="_blank" rel="noopener">View on GitHub <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="card-media"><img src="https://i.ibb.co/WWk83MVq/projet3.jpg" alt="Cinema booking J2EE" loading="lazy" /></div>
+            <div class="card-body">
+              <h3>Cinema Booking J2EE</h3>
+              <a class="card-link" href="https://github.com/Dahmen-Maram/Cinema-Booking-JEE.git" target="_blank" rel="noopener">View on GitHub <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="card-media"><img src="https://i.ibb.co/mCbMvgk3/projet4.png" alt="Arena Padel mobile app" loading="lazy" /></div>
+            <div class="card-body">
+              <h3>Partie frontend d'une application mobile Arena Padel</h3>
+              <a class="card-link" href="https://github.com/waelABDALLAH1/Arena-Padel-App.git" target="_blank" rel="noopener">View on GitHub <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- CERTIFICATIONS -->
+      <section id="Certif" class="container">
+        <div class="section-head reveal">
+          <p class="section-kicker">Continuous learning</p>
+          <h2 class="section-title">Certifications</h2>
+        </div>
+
+        <div class="cards-grid">
+          <article class="card cert reveal">
+            <div class="card-media"><img src="https://i.ibb.co/gLFPwXvR/2.png" alt="NVIDIA certificate" loading="lazy" /></div>
+            <div class="card-body">
+              <span class="pill">NVIDIA</span>
+              <h3>Building Transformer-Based Natural Language Processing Applications</h3>
+              <a class="card-link" href="assets/Building Transformer-Based Natural Language Processing Applications-1.pdf" download>Download <span aria-hidden="true">↓</span></a>
+            </div>
+          </article>
+          <article class="card cert reveal">
+            <div class="card-media"><img src="https://i.ibb.co/LD2cnS8G/1.png" alt="NVIDIA LLM certificate" loading="lazy" /></div>
+            <div class="card-body">
+              <span class="pill">NVIDIA</span>
+              <h3>Rapid Application Development with Large Language Models (LLMs)</h3>
+              <a class="card-link" href="assets/Certif 3-1.pdf" download>Download <span aria-hidden="true">↓</span></a>
+            </div>
+          </article>
+          <article class="card cert reveal">
+            <div class="card-media"><img src="https://i.ibb.co/hxW7N17L/4.png" alt="NVIDIA NLP certificate" loading="lazy" /></div>
+            <div class="card-body">
+              <span class="pill">NVIDIA</span>
+              <h3>Introduction to Transformer-Based Natural Language Processing</h3>
+              <a class="card-link" href="assets/certif Nvidia.pdf" download>Download <span aria-hidden="true">↓</span></a>
+            </div>
+          </article>
+          <article class="card cert reveal">
+            <div class="card-media"><img src="https://i.ibb.co/zVtsY7MG/Certif-CCNA.png" alt="Cisco CCNA certificate" loading="lazy" /></div>
+            <div class="card-body">
+              <span class="pill">Cisco</span>
+              <h3>CCNA: Introduction to Networks</h3>
+              <a class="card-link" href="assets/_certificate_maram-dahmen-etudiant-enit-utm-tn_64be8089-9e4f-4c27-8843-776887def01a.pdf" download>Download <span aria-hidden="true">↓</span></a>
+            </div>
+          </article>
+          <article class="card cert reveal">
+            <div class="card-media"><img src="https://i.ibb.co/0yw48gTc/Certif-Docker.jpg" alt="Docker certificate" loading="lazy" /></div>
+            <div class="card-body">
+              <span class="pill">Docker</span>
+              <h3>Docker Training Course for the Absolute Beginner</h3>
+              <a class="card-link" href="assets/Certif Docker.pdf" download>Download <span aria-hidden="true">↓</span></a>
+            </div>
+          </article>
+          <article class="card cert reveal">
+            <div class="card-media"><img src="https://i.ibb.co/gx3JWk7/Certif-web.jpg" alt="Opus Lab web development certificate" loading="lazy" /></div>
+            <div class="card-body">
+              <span class="pill">Opus Lab</span>
+              <h3>Certificat Dev Web niv. 1</h3>
+            </div>
+          </article>
+          <article class="card cert reveal">
+            <div class="card-media"><img src="https://i.ibb.co/4ZXmSRZY/Certif-Enit.jpg" alt="ENIT Junior Entreprise certificate" loading="lazy" /></div>
+            <div class="card-body">
+              <span class="pill">ENIT Junior Entreprise</span>
+              <h3>Certificat de reconnaissance</h3>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="container">
+        <div class="contact-wrap reveal">
+          <div class="contact-intro">
+            <p class="section-kicker">Get in touch</p>
+            <h2 class="section-title">Let's build something together</h2>
+            <p>
+              Have a project, a role or just a question? Send me a message and I'll get back to you
+              as soon as possible.
+            </p>
+            <div class="contact-links">
+              <a href="https://www.linkedin.com/in/maram-dahmen-47a78b297/" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path class="fill" d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.8 0 0 .77 0 1.73v20.54C0 23.23.8 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>
+                LinkedIn
+              </a>
+              <a href="https://github.com/Dahmen-Maram" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path class="fill" d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.82-.26.82-.57v-2.04c-3.34.73-4.04-1.6-4.04-1.6-.55-1.4-1.34-1.77-1.34-1.77-1.08-.74.09-.73.09-.73 1.2.09 1.83 1.24 1.83 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.17 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.66 1.65.25 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.62-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .3Z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+
+          <form id="contact-form" class="contact-form" onsubmit="sendEmail(event)" aria-label="Contact form">
+            <div class="form-group">
+              <label for="user_name">Your name</label>
+              <input type="text" id="user_name" name="user_name" required placeholder="Jane Doe" autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label for="user_email">Your email</label>
+              <input type="email" id="user_email" name="user_email" required placeholder="jane@company.com" autocomplete="email" />
+            </div>
+            <div class="form-group">
+              <label for="user_message">Your message</label>
+              <textarea id="user_message" name="user_message" rows="5" required placeholder="What would you like to say?"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Send message</button>
+            <div id="form-status" class="form-status" role="alert" aria-live="polite"></div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <a href="#profile" class="logo">Maram<span>.</span></a>
+        <ul class="footer-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#Skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#Certif">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <p>&copy; <span id="year">2026</span> Maram Dahmen</p>
+      </div>
     </footer>
+
     <script src="script.js"></script>
   </body>
 </html>
